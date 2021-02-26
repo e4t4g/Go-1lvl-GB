@@ -59,3 +59,5 @@ func vali() (float64, error) {
 		return y, nil
 	}
 }
+
+
