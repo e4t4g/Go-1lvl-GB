@@ -4,16 +4,29 @@ import "fmt"
 
 func main() {
 
-	var n int
-	_, err := fmt.Scan(&n)
-	if err !=nil {
-		fmt.Printf("error: %v", err)
+	myMap := map[int]int{
+		0: 0,
+		1: 1,
+		2: 1,
 	}
 
-	var mapFib = map[int]int{}
-	mapFib[n] = fibonacci(n)
+	var a int
 
-	fmt.Print(mapFib)
+	for i := 0; i < 15; i++ {
+		_, err := fmt.Scan(&a)
+		if err != nil {
+			fmt.Printf("error: %v", err)
+			break
+		}
+		if value, inMap := myMap[a]; inMap {
+			fmt.Printf("MAP DATA: Fibonacci number for %v equal to: %v\n", a, value)
+
+		} else {
+			myMap[a] = fibonacci(a)
+			fmt.Printf("FRESH COUNT: Fibonacci number for %v equal to: %v\n", a, myMap[a])
+		}
+	}
+
 }
 
 func fibonacci(n int) int {
@@ -22,3 +35,4 @@ func fibonacci(n int) int {
 	}
 	return fibonacci(n-1) + fibonacci(n-2)
 }
+
