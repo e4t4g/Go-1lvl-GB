@@ -1,0 +1,8 @@
+{
+
+    "port": 443,
+    "DbUrl": "postgresql://user:pass@localhost/mydatabase/?sslmode=disable",
+    "someAppKey": "plus"
+
+}
+
