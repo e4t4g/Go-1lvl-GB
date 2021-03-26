@@ -3,7 +3,7 @@
 package main
 
 import (
-	"awesomeProject/calculator"
+	"Go-1lvl-GB/calculator"
 	"errors"
 	"fmt"
 	"strconv"

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"awesomeProject/FibNumber"
+	"Go-1lvl-GB/FibonacciCounter/FibNumber"
 	"fmt"
 )
 
